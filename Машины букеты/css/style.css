@@ -12,7 +12,7 @@ font-family: 'Oswald', sans-serif;
 	height: 80px;
     box-shadow: 3px 7px 50px 0px #000000;
 }
-.bgColor{
+.navColor{
 	background: #ff8989;
 }
 
@@ -22,6 +22,7 @@ font-family: 'Oswald', sans-serif;
 	margin-right: 10px;
 }
 .header_content{
+.headerColor{
 	height: 87vh ;
 	background: #f7c0c0;
 }
@@ -63,8 +64,8 @@ font-family: 'Oswald', sans-serif;
 .galer{
 	height: auto;
 }
-.bg-light{
-	background-color: #f39f9f !important;
+.galerColor{
+	background-color: #f39f9f;
 }
 
 .cardImg{
@@ -89,7 +90,9 @@ font-family: 'Oswald', sans-serif;
 /* costomer */
 
 .customer{
-	padding: 30px 0;
+	padding: 30px 0;	
+}
+.customerColor{
 	background:#bb7070;
 }
 .Ava{
@@ -100,10 +103,21 @@ font-family: 'Oswald', sans-serif;
 }
 /* costomer */
 
+/* form blok */
 
+/* form blok */
+.formBlok{
+	width: ;
+	height: auto;
+	margin: 0 auto;
+}
+
+.email{
+	border: 1px solid #495057;
+}
 
 /* footer */
-.footer{
+.footerColor{
 	background: #7d4444;
 }
 
