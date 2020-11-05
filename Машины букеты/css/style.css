@@ -7,6 +7,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 
+
 .header_nav{
 	height: 80px;
     box-shadow: 3px 7px 50px 0px #000000;
@@ -53,6 +54,26 @@ font-family: 'Oswald', sans-serif;
 .galer{
 	height: auto;
 }
+.cardImg{
+	padding: 10px;
+	border-radius: 20px;
+	width: 80%;
+	height: 60%;
+	margin: 0 auto;
+}
+
+.btnCard{
+	width: 100%;
+}
+
+.btnCard button{
+	width: 100%;
+}
+
+
+
+
+
 
 
 .customer{
@@ -60,8 +81,24 @@ font-family: 'Oswald', sans-serif;
 	background:#2e2e2e;
 }
 .Ava{
-	width: 200px;
+	width: 150px;
 	border-radius: 50%;
 	padding: 10px;
-	height: 200px;
+	height: 150px;
+}
+
+
+
+
+
+
+
+.footerRow{
+	justify-content: center;
+	text-decoration: none;
+}
+
+.footerItem{
+	text-decoration: none !important;
+	color: #000 !important;
 }
