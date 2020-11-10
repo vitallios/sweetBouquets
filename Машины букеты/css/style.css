@@ -59,9 +59,11 @@ body{
 	width: auto !important;
    height: 400px;
 	margin: 0 auto;
+	padding: 10px;
+}
+.border{
 	border-radius: 20px;
 	border: 6px solid #fb8989;
-	padding: 10px;
 }
 .card{
 	border: none;
