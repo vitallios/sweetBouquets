@@ -38,132 +38,10 @@ body{
 
 
 
-/*  carusel */
-.carus{
-	background: #FFA3BF;
-}
-
-.py-5 {
-	padding: 20px!important;
-}
-.carousel-inner{
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 40px;
-}
-.ol{
-	margin: 0;
-	padding-bottom: 10px;
-}
-.slide li {
-	width: 20px;
-	height: 7px;
-	border-top: 0px solid transparent;
-	border-radius: 50%;
-	background: #000;
-	
-}
-.w-100 {
-	width: auto !important;
-   height: 400px;
-	margin: 0 auto;
-	padding: 10px;
-}
-.border{
-	border-radius: 20px;
-	border: 6px solid #fb8989;
-}
-.card{
-	border: none;
-	background-color: #7d5762;
-	color: #fff;
-	border-radius: 30px;
-}
-.btn-outline-secondary {
-	background: #fff;
-}
-/* carus */
 
 
-/* gals */
-.gals{
-	box-sizing: border-box;
-	height: 500px;
-   width: 300px;
-	margin: 20px auto;
-	background: #FFA3BF;
-}
-.gals img{
-		vertical-align: middle;
-}
 
-.container {
-	position: relative;
- }
- .mySlides {
-	display: none;
-	width: 100%;
- }
- .cursor {
-	cursor: pointer;
- }
- .prev,
- .next {
-	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	width: auto;
-	padding: 16px;
-	margin-top: -50px;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-	-webkit-user-select: none;
- }
- .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
- }
- .prev:hover,
- .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
- }
- .numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
- }
- .caption-container {
-	text-align: center;
-	background-color: #222;
-	padding: 2px 16px;
-	color: white;
- }
- .rov{
-	 padding: 20px 0;
- }
- .rov:after {
-	content: "";
-	display: table;
-	clear: both;
- }
- .column {
-	float: left;
-	width: 16.66%;
- }
- .demo {
-	opacity: 0.6;
- }
- .active,
- .demo:hover {
-	opacity: 1;
- }
 
-/* gals */
 
 /* galer */
 .galer{
@@ -173,22 +51,19 @@ body{
 	background: linear-gradient(to bottom, #FFA3BF 0%,#FFE7E0 100%);
 }
 
-.cardImg{
-	padding: 10px;
-	border-radius: 20px;
-	width: 80%;
-	height: 60%;
-	margin: 0 auto;
-}
 
-.btnCard{
-	width: 100%;
-}
 
-.btnCard button{
-	width: 100%;
-}
+
+
+
 /* galer */
+
+
+
+
+
+
+
 
 /* form blok */
 .formGroup_title{

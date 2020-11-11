@@ -78,17 +78,30 @@
 								<div class="modal-body">
 									<form>
 
-										<div class="form-group row">
-											<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-											<div class="col-sm-10">
-												<input type="text" readonly class="form-control-plaintext" id="staticEmail"
-													value="email@example.com">
+										<div class="row">
+											<div class="col-md-6 mb-3">
+												<label for="firstName">Ваше имя</label>
+												<input type="text" class="form-control" id="firstName" placeholder="" value=""
+													required="">
+												<div class="invalid-feedback">
+													Valid first name is required.
+												</div>
 											</div>
-										</div>
-										<div class="form-group">
-											<label for="exampleFormControlTextarea1">Example textarea</label>
-											<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-										</div>
+
+											<div class="col-md-6 mb-3">
+												<label for="email">Ваш Email</label>
+												<input type="email" class="form-control" id="email" placeholder="you@example.com">
+												<div class="invalid-feedback">
+													Please enter a valid email address for shipping updates.
+												</div>
+											</div>
+
+											<div class="col-md-12 mb-3">
+
+												<label for="exampleFormControlTextarea1">Ваше сообщение</label>
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+											</div>
 
 									</form>
 								</div>
@@ -109,217 +122,125 @@
 
 	</header>
 
-	<div class="carus">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators ol">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-
-			<div class="carousel-inner heightImg">
-				<div class="carousel-item itemImg active ">
-					<img src="/Машины букеты/img/IMG-20201021-WA0002.jpg" class="d-block w-100 border " alt="...">
-				</div>
-				<div class="carousel-item itemImg">
-					<img src="/Машины букеты/img/IMG-20201021-WA0004.jpg" class="d-block w-100 border" alt="...">
-				</div>
-				<div class="carousel-item itemImg">
-					<img src="/Машины букеты/img/IMG-20201021-WA0006.jpg" class="d-block w-100 border" alt="...">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="gals">
-		<div class="container">
-			<div class="mySlides">
-				<div class="numbertext">1 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0006.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">2 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0004.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">3 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0003.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">4 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0002.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">5 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0007.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides">
-				<div class="numbertext">6 / 6</div>
-				<img src="/Машины букеты/img/IMG-20201021-WA0016.jpg" style="width:100%">
-			</div>
-
-			<a class="prev" onclick="plusSlides(-1)">❮</a>
-			<a class="next" onclick="plusSlides(1)">❯</a>
-
-			<div class="caption-container">
-				<p id="caption"></p>
-			</div>
-
-			<div class="rov">
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0006.jpg" style="width:100%"
-						onclick="currentSlide(1)" alt="The Woods">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0004.jpg" style="width:100%"
-						onclick="currentSlide(2)" alt="Cinque Terre">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0003.jpg" style="width:100%"
-						onclick="currentSlide(3)" alt="Mountains and fjords">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" style="width:100%"
-						onclick="currentSlide(4)" alt="Northern Lights">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0007.jpg" style="width:100%"
-						onclick="currentSlide(5)" alt="Nature and sunrise">
-				</div>
-				<div class="column">
-					<img class="demo cursor" src="/Машины букеты/img/IMG-20201021-WA0016.jpg" style="width:100%"
-						onclick="currentSlide(6)" alt="Snowy Mountains">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
 
 	<div class="galer ">
 		<div class="album py-5 galerColor">
 
 			<div class="container">
+				<div class="galerModal_1">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+						Launch static backdrop modal
+					</button>
 
-				<div class="row">
-
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
-
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+						aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
+				<div class="galerModal_2">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+						Launch static backdrop modal
+					</button>
 
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+						aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
+				<div class="galerModal_3">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+						Launch static backdrop modal
+					</button>
 
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+						aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
+				<div class="galerModal_4">
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+						Launch static backdrop modal
+					</button>
 
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+						aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
-
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<img class="cardImg" src="/Машины букеты/img/IMG-20201021-WA0002.jpg" alt="">
-
-							<div class="card-body">
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-									additional content. This content is a little bit longer.</p>
-
-								<div class="d-flex justify-content-between align-items-center">
-
-									<div class="btn btnCard">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 
 			</div>
