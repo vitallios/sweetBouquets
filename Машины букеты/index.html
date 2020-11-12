@@ -14,10 +14,6 @@
 
 <body>
 
-
-
-
-
 	<header class="header">
 		<nav class="header_nav navbar navbar-expand-lg navbar-dark navColor">
 
@@ -46,14 +42,14 @@
 								aria-haspopup="true" aria-expanded="false">Портфолио
 							</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown07">
-								<a class="dropdown-item" href="#">Сладкие букеты</a>
-								<a class="dropdown-item" href="#">Подарочные наборы</a>
-								<a class="dropdown-item" href="#">Декорации</a>
+								<a class="dropdown-item" href="#galer">Сладкие букеты</a>
+								<a class="dropdown-item" href="#galer">Подарочные наборы</a>
+								<a class="dropdown-item" href="#galer">Декорации</a>
 							</div>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Контакты</a>
+							<a class="nav-link" href="#footer">Контакты</a>
 						</li>
 
 					</ul>
@@ -116,22 +112,27 @@
 				</div>
 			</div>
 		</nav>
-		<div class="header_content headerColor">
+		<div id="header_content" class="header_content headerColor">
 
 		</div>
 
 	</header>
 
+	<a class="btn" id="top">
+		<img src="/Машины букеты/img/001-upwards-arrow.svg" alt="">
+	</a>
 
-	<div class="galer ">
+	<div class="galer" id="galer">
 		<div class="album py-5 galerColor">
 
 			<div class="container">
+				<h3 class="col-lm-12 galerTitle">Портфолио</h3>
+
 				<div class="galerRow row">
 					<div class="galerModal_1 m-2 col-lm-4">
 						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-							Launch static backdrop modal
+						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+							Сладкие букеты
 						</button>
 
 						<!-- Modal -->
@@ -141,7 +142,7 @@
 								<div class="modal-content">
 
 									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<h5 class="modal-title" id="staticBackdropLabel">Сладкие букеты</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -173,8 +174,8 @@
 					</div>
 					<div class="galerModal_2 m-2 col-lm-4">
 						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop2">
-							Launch static backdrop modal
+						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop2">
+							Подарочные наборы
 						</button>
 
 						<!-- Modal -->
@@ -184,7 +185,7 @@
 								<div class="modal-content">
 
 									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<h5 class="modal-title" id="staticBackdropLabel">Подарочные наборы</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -216,8 +217,8 @@
 					</div>
 					<div class="galerModal_3 m-2 col-lm-4">
 						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop3">
-							Launch static backdrop modal
+						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop3">
+							Декорации
 						</button>
 
 						<!-- Modal -->
@@ -227,7 +228,7 @@
 								<div class="modal-content">
 
 									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+										<h5 class="modal-title" id="staticBackdropLabel">Декорации</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
@@ -258,6 +259,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 		</div>
@@ -270,7 +272,7 @@
 
 				<div class="form-group">
 					<div class="formGroup_title">
-						<h4 class="">Сделай заказ прямо сейчас!</h4>
+						<h3 class="">Сделай заказ прямо сейчас!</h3>
 					</div>
 					<div class="row">
 						<div class="col-md-6 mb-3">
@@ -296,7 +298,7 @@
 
 						</div>
 
-						<button class="btn btn-primary btn-lg btn-block" type="submit">Отправить</button>
+						<button class="btn btnForm btn-primary btn-lg btn-block" type="submit">Отправить</button>
 					</div>
 
 				</div>
@@ -363,7 +365,7 @@
 	</div>
 
 	<footer class="py-5 footerColor">
-		<div class="container">
+		<div class="container" id="footer">
 			<div class="row footerRow">
 
 				<div class="col-2 col-xs">
@@ -402,7 +404,6 @@
 
 
 	<script src="/Машины букеты/js/main.js"></script>
-
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
