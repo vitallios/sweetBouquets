@@ -47,9 +47,35 @@ body{
 .galer{
 	height: auto;
 }
+.galerRow{
+	display: flex;
+	justify-content: center;
+	/* padding: 15px 0; */
+}
+.modal-dialog{
+	max-width: 660px;
+}
+.modal-body{
+	height: auto;
+	text-align: center;
+}
 .galerColor{
 	background: linear-gradient(to bottom, #FFA3BF 0%,#FFE7E0 100%);
 }
+.galerImg_modal{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	text-align: center;
+	justify-content: space-between;
+}
+.galerImg_modal img{
+	width: 100%;
+	background-size: cover;
+	margin: 0;
+	padding: 5px;
+}
+
 
 
 
