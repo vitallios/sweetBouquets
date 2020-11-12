@@ -75,7 +75,22 @@
 									<form>
 
 										<div class="row">
-											<div class="col-md-6 mb-3">
+
+
+
+											<!-- Hidden Required Fields -->
+											<input type="hidden" name="project_name" value="Site Name">
+											<input type="hidden" name="admin_email" value="admin@mail.com">
+											<input type="hidden" name="form_subject" value="Form Subject">
+											<!-- END Hidden Required Fields -->
+
+											<input type="text" name="Name" placeholder="You name..." required><br>
+											<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+											<input type="text" name="Phone" placeholder="You phone..."><br>
+											<button>Send</button>
+
+
+											<!-- <div class="col-md-6 mb-3">
 												<label for="firstName">Ваше имя</label>
 												<input type="text" class="form-control" id="firstName" placeholder="" value=""
 													required="">
@@ -95,16 +110,16 @@
 											<div class="col-md-12 mb-3">
 
 												<label for="exampleFormControlTextarea1">Ваше сообщение</label>
-												<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+												<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea> -->
 
-											</div>
+										</div>
 
 									</form>
 								</div>
-								<div class="modal-footer">
+								<!-- <div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 									<button type="button" class="btn btn-primary">Save changes</button>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
