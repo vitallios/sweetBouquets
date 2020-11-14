@@ -256,31 +256,29 @@
 
 	<div class="form-blok">
 		<div class="container">
-			<form class="formBlok">
+			<div class="formBlok">
 
 				<div class="form-group">
 					<div class="formGroup_title">
 						<h3 class="">Сделай заказ прямо сейчас!</h3>
 					</div>
 					<div class="row">
-						<form action="/Машины букеты/php/main.php" method="POST">
-							<fieldset>
-								<legend>Ваше сообщение</legend>
-								Ваше имя:
-								<input type="text" name="name">
-								E-mail:
-								<input type="text" name="name">
-								Номер телефона:
-								<textarea name="massage" cols="45" rows="10"></textarea>
-								<input type="submit" value="Отправить сообщение">
-							</fieldset>
+
+						<form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+							<!-- Поле ввода имени --> <input name="name" type="text" placeholder="Ваше имя" /> <br>
+							<!-- Поле ввода почты --> <input name="email" type="text" placeholder="Ваша почта" /> <br>
+							<!-- Поле ввода для темы сообщения --> <input size="30" name="header" type="text"
+								placeholder="Тема" /> <br> <!-- Текстовое поле для самого сообщения --> <textarea cols="32"
+								name="message" rows="5"> Текст сообщения </textarea> <br>
+							<!-- Кнопка с надписью «Отправить», которая запускает обработчик формы --> <input type="submit"
+								value="Отправить" />
 						</form>
 
 					</div>
 
 				</div>
 
-			</form>
+			</div>
 		</div>
 	</div>
 

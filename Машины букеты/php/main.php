@@ -1,10 +1,4 @@
-<?php
-$to = "ypaypa282@gmail.com";
-$tema = "Заказ";
-$message = "Ваше имя: ".$_POST['name']."<br>";
-	$massage .= "E-mail: ".$_POST['email']."<br>";
-$message .= "Номер телефона: ".$_POST['phone']."<br>";
-$massage .= "Сообщение: ".$_POST['message']."<br>";
-$headers = 'MIME-Version: 1.0' . "\r\n";
-	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-mail($to, $tema, $message, $headers);
+<!-- Через 10 секунд после появления сообщения об отправке или ошибке — отправляемся на сайт Кода :) -->
+<meta http-equiv='refresh' content='10; url=http://thecode.local/'>
+<meta charset="UTF-8" /> <!-- Начался блок PHP --> <?php // Получаем значения переменных из пришедших данных $name = $_POST['name']; $email = $_POST['email']; $header = $_POST['header']; $message = $_POST['message']; // Формируем сообщение для отправки, в нём мы соберём всё, что ввели в форме $mes = "Имя: $name \nE-mail: $email \nТема: $header \nТекст: $message"; // Пытаемся отправить письмо по заданному адресу // Если нужно, чтобы письма всё время уходили на ваш адрес — замените первую переменную $email на свой адрес электронной почты $send = mail($email, $header, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email"); // Если отправка прошла успешно — так и пишем if ($send == 'true') {echo "Сообщение отправлено";} // Если письмо не ушло — выводим сообщение об ошибке else {echo "Ой, что-то пошло не так";} 
+																	?>
