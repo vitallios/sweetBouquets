@@ -1,4 +1,4 @@
-<meta http-equiv='refresh' content='3; url=https://you-hands.ru'>
+<meta http-equiv='refresh' content='3; url=index.html'>
 <meta charset="UTF-8" />
 <?php
 
