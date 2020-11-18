@@ -22,7 +22,7 @@ body{
 /* header */
 .header_nav{
 	height: 80px;
-    box-shadow: 3px 7px 50px 0px #000000;
+   box-shadow: 3px 7px 50px 0px #000000;
 }
 .navColor{
 	background: #52181A;
@@ -47,56 +47,60 @@ body{
 
 #top{
 	position: fixed;
-	right: 25px;
-	bottom: 25px;
-	border-radius: 50%;
-	border: 1px solid #000;
+	right: 40px;
+	bottom: 30px;
+	width: 30px;
+	height: 30px;
+	border: 1px;
+	cursor: pointer;
+	display: none;
 }
 #top img{
 	width: 25px;
 	height: 25px;
 }
 
+/* galer */
+
+.galer{
+	width: 100%;
+	height: 400px;
+}
+
+.galerWrapper img {
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+
+.galerWrapper img:hover{
+-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/	-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+-o-transform:scale(1.1); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+}
+
+.imgGall{
+ max-width: 200px;
+}
 
 /* galer */
-.galer{
-	height: auto;
-}
-.galerTitle{
-	text-align: center;
-}
-.galerRow{
-	display: flex;
-	justify-content: center;
-}
-.btnh{
-	height: 50px;
-	width: 200px;
-}
-.modal-dialog{
-	max-width: 660px;
-}
-.modal-body{
-	height: auto;
-	text-align: center;
-}
-.galerColor{
-	background: linear-gradient(to bottom, #FFA3BF 0%,#FFE7E0 100%);
-}
-.galerImg_modal{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap-reverse;
-	text-align: center;
-	justify-content: space-between;
-}
-.galerImg_modal img{
-	width: 100%;
-	background-size: cover;
-	margin: 0;
-	padding: 5px;
-}
-/* galer */
+
+
+
+
+
+
+
+
+
 
 
 /* form blok */
