@@ -37,15 +37,10 @@
 							<a class="nav-link" href="#">Главная<span class="sr-only"> </span></a>
 						</li>
 
-						<li class="nav_drop nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false">Портфолио
+						<li class="nav_drop nav-item ">
+							<a class="nav-link" href="#gallery" id="dropdown07" aria-haspopup="true"
+								aria-expanded="false">Портфолио
 							</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown07">
-								<a class="dropdown-item" href="#galer">Сладкие букеты</a>
-								<a class="dropdown-item" href="#galer">Подарочные наборы</a>
-								<a class="dropdown-item" href="#galer">Декорации</a>
-							</div>
 						</li>
 
 						<li class="nav-item">
@@ -73,27 +68,30 @@
 
 								<div class="modal-body">
 
-									<form id="form">
-										<div class="row">
+									<form name="form" action="mail.php" method="post" id="form_message">
+										<h2>Форма обратной связи.</h2>
+										<p>
+										<div class="titles">Ваше имя*</div> <input class="input" name="name" type="text" /> </p>
 
+										<p>
+										<div class="titles">Электронная почта*</div> <input class="input" name="email"
+											type="text" /> </p>
 
+										<p>
+										<div class="titles">Тема сообщения</div> <input class="input" name="subjects"
+											type="text" /> </p>
 
-											<!-- Hidden Required Fields -->
-											<input type="hidden" name="project_name" value="Site Name">
-											<input type="hidden" name="admin_email" value="admin@mail.com">
-											<input type="hidden" name="form_subject" value="Form Subject">
-											<!-- END Hidden Required Fields -->
-
-											<input type="text" name="Name" placeholder="You name..." required><br>
-											<input type="text" name="E-mail" placeholder="You E-mail..." required><br>
-											<input type="text" name="Phone" placeholder="You phone..."><br>
-											<button>Отправить</button>
-
-
-										</div>
+										<p>
+										<div class="titles">Текст сообщения:</div><textarea name="message" cols="22"
+											rows="5" /></textarea>
+										</p>
+										<p><input id="submit" value="Отправить" type="submit" /></p>
 									</form>
 
 								</div>
+
+
+
 							</div>
 						</div>
 					</div>
@@ -110,178 +108,27 @@
 		<img class="top" src="/img/001-upwards-arrow.svg" alt="">
 	</a>
 
-
 	<div class="galer">
-		<div class="galerWrapper">
+		<div class="galerWrapper" id="gallery">
 
-			<img src="/img/001-upwards-arrow.svg" alt="" class="imgGall">
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-			<img src="/img/IMG-20201021-WA0004.jpg" alt="" class="imgGall">
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-			<img src="/img/IMG-20201021-WA0016.jpg" alt="" class="imgGall">
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-			<img src="/img/IMG-20201021-WA0004.jpg" alt="" class="imgGall">
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-			<img src="/img/001-upwards-arrow.svg" alt="" class="imgGall">
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-			<img src="/img/IMG-20201021-WA0016.jpg" alt="" class="imgGall">
-		</div>
-	</div>
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
+			<img src="/img/вит1.jpg" alt="" class="imgGall" tabindex="0">
 
-
-
-
-
-
-
-
-
-
-
-	<div class="galer" id="galer">
-		<div class="album py-5 galerColor">
-
-			<div class="container">
-				<h3 class="col-lm-12 galerTitle">Портфолио</h3>
-
-				<div class="galerRow row">
-					<div class="galerModal_1 m-2 col-lm-4">
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-							Сладкие букеты
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-							aria-labelledby="staticBackdropLabel" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-
-									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Сладкие букеты</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-
-									<div class="modal-body">
-										<div class="galerImg_modal">
-											<img class="col-md-4 ml-auto" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0002.jpg" alt="">
-
-										</div>
-									</div>
-
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="galerModal_2 m-2 col-lm-4">
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop2">
-							Подарочные наборы
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false"
-							tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-
-									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Подарочные наборы</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-
-									<div class="modal-body">
-										<div class="galerImg_modal">
-											<img class="col-md-4 ml-auto" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-										</div>
-									</div>
-
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="galerModal_3 m-2 col-lm-4">
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btnh btn-primary" data-toggle="modal" data-target="#staticBackdrop3">
-							Декорации
-						</button>
-
-						<!-- Modal -->
-						<div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false"
-							tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-scrollable">
-								<div class="modal-content">
-
-									<div class="modal-header">
-										<h5 class="modal-title" id="staticBackdropLabel">Декорации</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-
-									<div class="modal-body">
-										<div class="galerImg_modal">
-											<img class="col-md-4 ml-auto" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-											<img class="col-md-4" src="/img/IMG-20201021-WA0016.jpg" alt="">
-
-										</div>
-									</div>
-
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
 
 		</div>
-
 	</div>
 
 	<div class="form-blok">
@@ -373,9 +220,6 @@
 
 	</div>
 
-
-
-
 	<footer class="py-5 footerColor">
 		<div class="container" id="footer">
 			<div class="row footerRow">
@@ -383,7 +227,7 @@
 				<div class="col-2 col-xs">
 
 					<a class="footerItem" href="#">
-						About
+						<img src="" alt="Inst">
 					</a>
 
 				</div>
@@ -391,14 +235,13 @@
 				<div class="col-2 col-xs">
 
 					<a class="footerItem" href="#">
-						About
+						<img src="" alt="VK">
 					</a>
 
 				</div>
 
 				<div class="col-2 col-xs">
-					<a class="footerItem" href="#"> About
-					</a>
+					<img src="" alt="FB">
 				</div>
 
 				<div class="col-3 col-xs">
@@ -410,6 +253,10 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+
 
 	<script src="/js/main.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
