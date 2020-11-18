@@ -104,28 +104,34 @@ body{
 
 
 /* form blok */
-.formGroup_title{
-	width: 100%;
-	text-align: center;
-	padding-bottom: 25px;
+.titles{
+	width: 140px;
+	float: left;
 }
-.formBlok{
-	width: 70%;
+
+#form_message{
+	display: block;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	margin:10px;
+	padding: 10px;
+	width: 500px;
 	height: auto;
-	margin: 0 auto;
-	padding-top: 50px;
-	padding-bottom: 70px;
 }
-.form-group{
-	margin: 0;
+
+#form_message input,textarea{
+	border-radius: 5px;
+	width: 170px;
 }
-.row{
-	padding: 20px 0;
+
+#submit{
+	height: 50px;
+	float: right;
 }
-.btnForm{
-	margin-right: 15px;
-	margin-left: 15px;
-}
+
+#form_message h2{
+	text-align: center;
+}ß
 /* form blok */
 
 /* costomer */
