@@ -42,6 +42,15 @@ body{
 	#FFBAB5
 	#FFE7E0
 }
+
+		
+.menu {
+	margin: 6px 0 10px 0;
+	background: #52181a;
+	width: 100%;
+	height: 180px;
+
+}
 .modal-dialog {
 	max-width: 600px;
 }
@@ -71,7 +80,7 @@ body{
 /* galer */
 .galer{
 	width: 100%;
-	height: 100vh;
+	height: 650px;
 }
 
 #gallery {
@@ -173,11 +182,16 @@ body{
 }
 .footerRow{
 	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 }
 .footerItem{
-	width: 20%;
+	width: 40px;
 	text-decoration: none !important;
 	color: #fff !important;
+
+}
+.item{
+	width: 40px;
 }
 /* footer */
